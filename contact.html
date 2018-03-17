@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact</title>
-        <meta charset="UTF-8" lang="en">
-        <link rel="stylesheet" href="./assets/css/reset.css"/>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-    </head>
-    <body>
-        <div class="topsection">
-            <header class="namesection">Rajkumar Purushothaman</header>
-            <div class="references">
-                <!-- <p class="top">Contact</p> -->
-                <a class="top" href="./contact.html">Contact</a>
-                <a class="top middle" href="./portfolio.html">Portfolio</a>
-                <a class="top" href="./index.html">About</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="aboutsection">Contact Me</div>
-            <hr>
-            
-            <div class="formtext">
-                <p class="formtext name">Name</p>
-                <input type="text"/>
-                <p class="formtext email">Email</p>
-                <input type="email"/>
-                <p class="formtext message">Message</p>
-                <textarea class="formtext message" name="message" rows="8" cols="50"></textarea>
-                <div>
-                    <input type="submit" value="Submit"/>
-                </div>
-            </div>
 
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8" lang="en">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="topsection">
+        <header class="namesection">Rajkumar Purushothaman</header>
+        <div class="references">
+            <!-- <label for="" class="top">Contact</label for=""> -->
+            <a class="top" href="./contact.html">Contact</a>
+            <a class="top middle" href="./portfolio.html">Portfolio</a>
+            <a class="top" href="./index.html">About</a>
         </div>
-        <footer>Copyright ©</footer>
-    </body>
+    </div>
+    <div class="content">
+        <div class="aboutsection">Contact Me</div>
+        <hr>
+
+        <div class="formtext form-control">
+            <div>
+                <label for="name" class="formtext name form-group">Name</label>
+                <input type="text" id="name" placeholder="jane doe" />
+            </div>
+            <div>
+                <label for="email" class="formtext email form-group">Email</label>
+                <input type="email" id="email" placeholder="janedoe@gmail.com" />
+            </div>
+            <div>
+                <label for="message" class="formtext message">Message</label>
+                <br>
+                <textarea class="formtext message" name="message" id="message" rows="8" cols="104"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="btn btn-success btn-xs"/>
+            </div>
+        </div>
+
+    </div>
+    <footer>Copyright ©</footer>
+</body>
+
 </html>
